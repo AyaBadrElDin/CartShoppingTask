@@ -32,6 +32,11 @@ fun updateCartSavedData(cartSaved: CartSaved) {
 fun getCartSaved(): CartSaved? {
     return PreferencesManager.get<CartSaved>(keyCartStore)
 }
+fun checkDateToDate(){
+    if(checkDateAndCompare()){
+        deleteCartDataAfter3Days()
+    }
+}
 
 fun deleteCartDataAfter3Days(){
     PreferencesManager.put(null, keyCartStore)

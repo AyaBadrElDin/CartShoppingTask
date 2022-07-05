@@ -2,4 +2,7 @@
     <string name="app_name">CartTask</string>
     <string name="product_1">Product 1</string>
     <string name="add_to_cart">Add TO CART</string>
+    <string name="cart_shopping">Cart Shopping</string>
+    <string name="cart_empty_message">Cart Empty</string>
+    <string name="product_added">Product added to cart successfully</string>
 </resources>

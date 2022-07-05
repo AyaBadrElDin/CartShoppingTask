@@ -3,6 +3,7 @@
     package="com.example.carttask">
 
     <application
+        android:name=".components.MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -23,6 +24,13 @@
         <activity
             android:name=".features.cart.CartActivity"
             android:exported="true" />
+
+        <receiver android:name=".service.DateChangeReceiver"
+            >
+            <action android:name="android.intent.action.DATE_CHANGED" />
+            <action android:name="android.intent.action.TIME_CHANGED" />
+
+        </receiver>
     </application>
 
 </manifest>
