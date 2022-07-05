@@ -19,3 +19,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "CartTask"
 include ':app'
+include ':entities'
+include ':business'
